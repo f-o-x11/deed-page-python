@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deed-page"
+version = "0.1.0"
+description = "Official deed.page CLI and client: publish a file or folder to a permanent https://{slug}.deed.page/ URL. No account needed."
+readme = "README.md"
+requires-python = ">=3.8"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Avatar 8 LLC", email = "ops@avatar33.com" }]
+keywords = ["deed.page", "static-hosting", "publish", "deploy", "cli", "ai-agents", "hosting"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Internet :: WWW/HTTP :: Site Management",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://deed.page"
+Documentation = "https://deed.page/docs"
+Source = "https://github.com/f-o-x11/deed-page-python"
+Issues = "https://github.com/f-o-x11/deed-page-python/issues"
+
+[project.scripts]
+deed-page = "deed_page.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
